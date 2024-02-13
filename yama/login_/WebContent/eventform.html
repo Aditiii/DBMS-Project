@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body style="font-family: 'Quicksand',sans-serif;">
+
+
+<center>
+<a href="viewEvent.jsp">View Upcoming Events</a><br/>
+
+
+<h1>Register for Event</h1> 
+
+ <form action="Reg" method="get" name="reg" onsubmit="return validateEvent(document.reg.Organizer,document.reg.Contact)">
+
+     <i class="fa fa-user-circle" aria-hidden="true"></i>      
+     Name of Organizer :
+         <input type="text" name="Organizer" style="width: 10em" required ><br><br>
+         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+     Event Details : 
+        <input list="event_n" name="event_n">
+        <datalist id="event_n">
+          <option value="Movie Promotion">
+          <option value="Dance Competition">
+          <option value="Drawing Competition">
+          <option value="Fashion Show">
+          <option value="Advertisement">
+        </datalist> <br><br>
+    
+         <i class="fa fa-phone" ></i>
+         Phone Number :
+         <input type="number" name="Contact" style="width: 8.6em" required><br><br>
+         <i class="fa fa-calendar" aria-hidden="true"></i>
+          Email-id :
+        <input type="email" name="email_id" style="width: 11.5em" required="true"><br><br>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+         
+          Date of Event :
+         <input type="date" min="2018-10-13" max="2018-12-13" name="date"> <br><br>
+         <input type="submit" type="button" class="btn btn-secondary" style="float: center;">
+         
+       </form>
+</center>
+</body>
+</html>

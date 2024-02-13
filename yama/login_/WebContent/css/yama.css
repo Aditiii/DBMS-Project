@@ -1,0 +1,33 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.logo {
+	height: 0.5em;
+	width: 0.5em;
+}
+
+#header {
+	background-color: #b40036;
+	color: white;
+	font-size: 0.9em;
+	height: 30px;
+}
+
+#navbar {
+	background-color:#19191a;
+/*	margin-top: 10.3em;
+*/	height: 59px;
+	}
+
+.nav-link{
+	color: white;
+	padding-left: 10em;
+}
+
+
+.nav-link:hover{
+	color: #dbd8d6;
+
+}
+
